@@ -11,7 +11,8 @@
     "security-check": "nsp check",
     "localtunnel": "lt --port 3000 --subdomain markmatthewsphd",
     "share": "npm-run-all --paralell open:src localtunnel",
-    "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\""
+    "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
+    "test:watch": "npm run test -- --watch"
   },
   "author": "Cory House",
   "license": "MIT",
